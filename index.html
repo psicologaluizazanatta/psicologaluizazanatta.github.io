@@ -75,7 +75,7 @@
   .inicio .container { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: center; }
   .inicio h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 8px; }
   .crp { color: var(--suave); font-size: 0.95rem; margin-bottom: 24px; font-variant-numeric: tabular-nums; }
-  .chamada { font-size: 1.2rem; max-width: 34ch; margin-bottom: 32px; }
+  .chamada { font-size: 1.2rem; max-width: 40ch; margin-bottom: 32px; }
   .botoes { display: flex; gap: 12px; flex-wrap: wrap; }
   .botao {
     display: inline-block; padding: 12px 22px; border-radius: 999px;
@@ -112,7 +112,7 @@
   .cartao p { color: var(--suave); font-size: 0.95rem; }
 
   /* Atendimento */
-  .modos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .modos { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 720px; }
   .modo { background: var(--superficie); border-radius: 12px; padding: 28px; border-left: 4px solid var(--destaque); display: grid; gap: 10px; align-content: start; }
   .modo .det { color: var(--suave); font-size: 0.95rem; }
 
@@ -130,7 +130,7 @@
   .contato .p { color: var(--tinta); }
   .canais { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 10px; }
   .canais li { display: flex; gap: 12px; flex-wrap: wrap; }
-  .canais .tipo { min-width: 90px; color: var(--destaque-claro); font-size: 0.9rem; padding-top: 2px; }
+  .canais .tipo { min-width: 160px; color: var(--destaque-claro); font-size: 0.9rem; padding-top: 2px; }
   .canais a { color: #fff; }
 
   footer { padding: 32px 0 48px; color: var(--suave); font-size: 0.85rem; }
@@ -173,13 +173,13 @@
         <p class="rotulo">Psicóloga clínica</p>
         <h1>Luiza Zanatta</h1>
         <p class="crp">CRP 06/229875</p>
-        <p class="chamada"><span class="p">[Uma frase curta sobre o trabalho. Ex.: Psicoterapia para adultos que querem entender melhor suas emoções e relações.]</span> Psicoterapia para mulheres jovens e adultas de forma online.</p>
+        <p class="chamada">A psicoterapia pode ajudar você a compreender o que sente e encontrar novas formas de lidar com suas dificuldades.</p>
         <div class="botoes">
           <a class="botao principal" href="#contato">Agendar uma conversa</a>
           <a class="botao secundario" href="#sobre">Conhecer meu trabalho</a>
         </div>
       </div>
-            <div class="foto">
+      <div class="foto">
         <img src="1736567358398.jpg" alt="Foto de Luiza Zanatta">
       </div>
     </div>
@@ -240,14 +240,14 @@
   <section class="trabalho" id="trabalho">
     <div class="container">
       <p class="rotulo">Como trabalho</p>
-      <h2>Abordagem: <span class="p">[nome da abordagem, ex.: Terapia Cognitivo-Comportamental]</span></h2>
+      <h2>Abordagem: Terapia Cognitivo-Comportamental (TCC)</h2>
       <div class="texto">
-        <p><span class="p">[Explique a abordagem em linguagem simples, em 2 ou 3 frases, para quem nunca fez terapia.]</span></p>
+        <p>Na Terapia Cognitivo-Comportamental, olhamos juntas para a forma como seus pensamentos, emoções e atitudes se conectam no dia a dia. É um espaço acolhedor e sem julgamentos, onde você aprende a perceber os padrões que trazem sofrimento e a construir, no seu ritmo, maneiras mais leves de lidar com eles. Cada passo é combinado com você, para que a terapia faça sentido na sua vida.</p>
       </div>
       <div class="grade">
         <div class="cartao">
           <h3>Para quem</h3>
-          <p><span class="p">[Ex.: adultos e adolescentes a partir de 16 anos.]</span></p>
+          <p>Mulheres jovens e adultas.</p>
         </div>
         <div class="cartao">
           <h3>Temas que atendo</h3>
@@ -255,7 +255,7 @@
         </div>
         <div class="cartao">
           <h3>Como são as sessões</h3>
-          <p><span class="p">[Ex.: encontros semanais de 50 minutos.]</span></p>
+          <p>Encontros semanais online de 45 minutos.</p>
         </div>
       </div>
     </div>
@@ -264,15 +264,10 @@
   <section class="atendimento" id="atendimento">
     <div class="container">
       <p class="rotulo">Atendimento</p>
-      <h2>Presencial ou online</h2>
+      <h2>Atendimento online</h2>
       <div class="modos">
         <div class="modo">
-          <h3>Presencial</h3>
-          <p class="det"><span class="p">[Rua, número, bairro, cidade/UF]</span></p>
-          <p class="det"><span class="p">[Dias e horários, ex.: segunda a sexta, 8h às 20h]</span></p>
-        </div>
-        <div class="modo">
-          <h3>Online</h3>
+          <h3>Por videochamada</h3>
           <p class="det"><span class="p">[Por videochamada, para todo o Brasil.]</span></p>
           <p class="det">Atendimento online com cadastro no e-Psi, conforme a Resolução CFP nº 11/2018.</p>
         </div>
@@ -290,7 +285,7 @@
       </details>
       <details>
         <summary>Qual a duração e a frequência das sessões?</summary>
-        <p><span class="p">[Ex.: As sessões duram 50 minutos e costumam ser semanais.]</span></p>
+        <p>As sessões duram 45 minutos, acontecem uma vez por semana e são feitas por videochamada.</p>
       </details>
       <details>
         <summary>Atende por plano de saúde?</summary>
@@ -315,9 +310,11 @@
         <a class="botao principal" href="https://wa.me/5511999999999">Falar pelo WhatsApp</a>
       </div>
       <ul class="canais">
-        <li><span class="tipo">WhatsApp</span><span class="p">[(11) 99999-9999]</span></li>
-        <li><span class="tipo">E-mail</span><span class="p">[contato@exemplo.com.br]</span></li>
-        <li><span class="tipo">Instagram</span><span class="p">[@perfil]</span></li>
+        <li><span class="tipo">WhatsApp</span><span>[(11) 99999-9999]</span></li>
+        <li><span class="tipo">E-mail</span><span>[contato@exemplo.com.br]</span></li>
+        <li><span class="tipo">Instagram</span><a href="https://www.instagram.com/">[@perfil]</a></li>
+        <li><span class="tipo">LinkedIn / Currículo</span><a href="https://www.linkedin.com/in/">[link do perfil no LinkedIn]</a></li>
+        <li><span class="tipo">Google</span><a href="https://www.google.com/">[link do perfil no Google]</a></li>
       </ul>
     </div>
   </section>
